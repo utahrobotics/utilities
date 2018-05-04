@@ -1,6 +1,6 @@
 /* Code that will turn on the Jetson TX2/1
- * whenever power is available
- */
+   whenever power is available
+*/
 
 #define switchPin 14 // Active low signal to turn on Jetson
 #define pwrInPin 15 // Hooked up to the power LED on the Jetson
@@ -17,7 +17,7 @@ void setup() {
   delay(1000); // small delay from power on until we turn on the jetson
 }
 
-void pressSwitch(){
+void pressSwitch() {
   digitalWrite(switchPin, LOW);
   digitalWrite(LEDPin, HIGH);
   delay(500);
@@ -27,7 +27,7 @@ void pressSwitch(){
 
 void loop() {
   // put your main code here, to run repeatedly:
-  if(!digitalRead(pwrInPin)){
+  if (!digitalRead(pwrInPin)) {
     pressSwitch();
   }
   delay(5000);
