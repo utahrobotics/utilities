@@ -30,5 +30,5 @@ void loop() {
   if (!digitalRead(pwrInPin)) {
     pressSwitch();
   }
-  delay(5000);
+  delay(10000);
 }
