@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="respawn" default="true" />
+    <arg name="respawn_delay" default="2" />
+    <node pkg="utilities" type="sound_board_node.py" name="sound_board_node" respawn="$(arg respawn)" respawn_delay="$(arg respawn_delay)" output="screen">
+    </node>
+</launch>
